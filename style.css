@@ -1,0 +1,409 @@
+/* Common style starts here */
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html{
+
+    font-family: "Roboto", sans-serif;
+
+}
+
+a{
+
+    text-decoration: none;
+
+}
+
+.common-padding{
+
+    padding: 100px 50px;
+
+}
+
+hr{
+
+
+    border: solid 1px #f0f0f0;
+
+}
+
+/* Common style ends here */
+
+/* header starts here */
+
+header{
+
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    position: sticky;
+    width: 100%;
+    height: 8vh;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 3px 10px #4d4e4f;
+
+}
+
+.nav-section{
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.title-name{
+
+    padding: 10px;
+    letter-spacing: 3px;
+    transition: 0.4s all;
+
+}
+
+.title-name:hover{
+
+    background-color: #a8a2a2;
+
+}
+
+nav{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+}
+
+nav a{
+
+    color: black;
+    padding: 10px;
+    letter-spacing: 3px;
+    transition: 0.4s all;
+
+}
+
+nav a:hover{
+
+    background-color: #a8a2a2;
+
+}
+
+/* header ends here */
+
+/* Main starts here */
+
+/* main{
+
+    padding: 40px 15px;
+
+} */
+
+.burger{
+
+    width: 100%;
+
+}
+
+/* Catering starts here */
+
+.catering-section::after{
+
+    content: "";
+    clear: both;
+    display: table;
+
+}
+
+.shwarma{
+
+    padding: 20px;
+
+}
+
+.catering-details{
+
+    text-align: justify;
+    padding: 20px;
+
+}
+
+.catering-details h2{
+
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+
+}
+
+.catering-details dt{
+
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+
+}
+
+/* Catering ends here */
+
+/* Menu starts here */
+
+.menu-section::after{
+
+    clear: both;
+    content: "";
+    display: table;
+
+}
+
+.menu-details{
+
+    padding: 20px;
+
+}
+
+.pizza{
+
+    padding: 20px;
+
+}
+
+.menu-details h2{
+
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+
+}
+
+.menu-details dt{
+
+    font-weight: bolder;
+    letter-spacing: 3px;
+    margin: 20px 0 10px 0;
+
+}
+
+.menu-details p{
+
+    font-weight: bold;
+    margin-top: 10px;
+
+}
+
+/* Menu ends here */
+
+/* Contact starts here */
+
+.contact-section h2{
+
+    font-size: 32px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+
+}
+
+.contact-section p{
+
+    margin: 20px 0;
+
+}
+
+.contact-section address{
+
+    font-weight: bolder;
+    color: #1e6bb3;
+
+}
+
+.contact-section a{
+
+    color: red;
+
+}
+
+form{
+
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+
+}
+
+form input{
+
+    border: none;
+    border-bottom: 1px solid #818385;
+    padding: 20px 10px;
+
+}
+
+textarea{
+
+    padding: 20px 10px;
+    border: none;
+    border-bottom: 1px solid #818385;
+    resize: none;
+
+}
+
+.btn{
+
+    width: 150px;
+    padding: 10px 0;
+    border: none;
+    transition: 0.3s all;
+
+}
+
+.btn:hover{
+
+    background-color: #a4a7ab;
+
+}
+
+main::after{
+
+    clear: both;
+    content: "";
+    display: table;
+
+}
+
+/* Contact ends here */
+
+/* Main ends here */
+
+/* Footer starts here */
+
+footer{
+
+    text-align: center;
+    padding: 50px;
+    background-color: #c5c6c7;
+
+}
+
+/* Footer ends here */
+
+/* Responsive starts here */
+
+/* For mobiles */
+[class*="col-"]{
+
+    float: left;
+    width: 100%;
+
+}
+
+/* For Computer */
+
+@media only screen and (min-width:992px){
+
+    .col-1{width: 8.33%;}
+    .col-2{width:16.66%;}
+    .col-3{width: 25%;}
+    .col-4{width: 33.33%;}
+    .col-5{width: 41.66%;}
+    .col-6{width: 50%;}
+    .col-7{width: 58.33%;}
+    .col-8{width: 66.66%;}
+    .col-9{width: 75%;}
+    .col-10{width: 83.33%;}
+    .col-11{width: 91.66%;}
+    .col-12{width: 100%;}
+
+}
+
+/* For tablet */
+
+@media only screen and (max-width:992px){
+
+    .col-m-1{width: 8.33%;}
+    .col-m-2{width:16.66%;}
+    .col-m-3{width: 25%;}
+    .col-m-4{width: 33.33%;}
+    .col-m-5{width: 41.66%;}
+    .col-m-6{width: 50%;}
+    .col-m-7{width: 58.33%;}
+    .col-m-8{width: 66.66%;}
+    .col-m-9{width: 75%;}
+    .col-m-10{width: 83.33%;}
+    .col-m-11{width: 91.66%;}
+    .col-m-12{width: 100%;}
+
+}
+
+/* For extra large mobile */
+
+@media only screen and (max-width:768px){
+
+    .col-l-1{width: 8.33%;}
+    .col-l-2{width:16.66%;}
+    .col-l-3{width: 25%;}
+    .col-l-4{width: 33.33%;}
+    .col-l-5{width: 41.66%;}
+    .col-l-6{width: 50%;}
+    .col-l-7{width: 58.33%;}
+    .col-l-8{width: 66.66%;}
+    .col-l-9{width: 75%;}
+    .col-l-10{width: 83.33%;}
+    .col-l-11{width: 91.66%;}
+    .col-l-12{width: 100%;}
+
+    .header{
+
+        background-color: #07131f;
+        color: #800808;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 30vh;
+
+    }
+
+    .title-div{
+
+        width: 100%;
+
+    }
+
+    .title-name{
+
+        text-align: center;
+        font-weight: bolder;
+
+    }
+
+    .nav{
+
+        width: 100%;
+        flex-direction: column;
+        gap: 5px;
+
+    }
+
+    .link{
+
+        width: 100%;
+        color: #800808;
+        text-align: center;
+        font-weight: bolder;
+
+    }
+
+}
+
+
+
+/* Responsive ends here */
